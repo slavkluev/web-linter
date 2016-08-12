@@ -12,6 +12,9 @@ body {
 .row {
     height: 100%;
 }
+.col-sm-6 {
+    height: 100%;
+}
 textarea {
     height: 100%;
 }
