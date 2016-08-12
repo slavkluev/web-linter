@@ -1,5 +1,8 @@
 <?php
 
+use PSRLinter\Linter;
+use Symfony\Component\HttpFoundation\Request;
+
 require('../vendor/autoload.php');
 
 $app = new Silex\Application();
