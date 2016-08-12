@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Linter</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script src="lib/codemirror.js"></script>
+    <script>
+        var editor = CodeMirror.fromTextArea(myTextarea, {
+            lineNumbers: true
+        });
+    </script>
 </head>
 <body>
 <div class="cover-container">
@@ -16,7 +23,7 @@
     <div class="center-row">
         <div class="col-sm-6">
             <form action="/" method="post">
-                <textarea class="form-control" style="font-family:monospace;" name="code" required>{{ code|e }}</textarea>
+                <textarea id="myTextarea" class="form-control" style="font-family:monospace;" name="code" required>{{ code|e }}</textarea>
                 <input class="btn btn-primary btn-block" type="submit">
             </form>
         </div>
@@ -51,6 +58,6 @@
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
