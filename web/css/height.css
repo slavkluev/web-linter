@@ -21,3 +21,6 @@ form {
 textarea {
     height: 90%;
 }
+.CodeMirror {
+    height: 90%;
+}
