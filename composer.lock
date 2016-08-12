@@ -4,9 +4,173 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9818fd0c92fdfdc72c8a342c58ebd222",
-    "content-hash": "386f8d924e83a42a9e255fe2a63a2580",
+    "hash": "f323a3698718834d2d15cd0499f40524",
+    "content-hash": "5b361f5051374d5edbe8bda760beddc9",
     "packages": [
+        {
+            "name": "doctrine/inflector",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/inflector.git",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/90b2128806bfde671b6952ab8bea493942c1fdae",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Inflector\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Common String Manipulations with regard to casing and singular/plural rules.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "inflection",
+                "pluralize",
+                "singularize",
+                "string"
+            ],
+            "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "kevinlebrun/colors.php",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kevinlebrun/colors.php.git",
+                "reference": "b13d23b9365ece519abc0eaa77cd3061c5810d30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kevinlebrun/colors.php/zipball/b13d23b9365ece519abc0eaa77cd3061c5810d30",
+                "reference": "b13d23b9365ece519abc0eaa77cd3061c5810d30",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Colors": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Le Brun",
+                    "email": "lebrun.k@gmail.com",
+                    "homepage": "http://kevinlebrun.fr",
+                    "role": "developer"
+                }
+            ],
+            "description": "Colors for PHP CLI scripts",
+            "homepage": "https://github.com/kevinlebrun/colors.php",
+            "keywords": [
+                "cli",
+                "color",
+                "colors",
+                "console",
+                "shell"
+            ],
+            "time": "2012-03-25 18:18:10"
+        },
+        {
+            "name": "league/climate",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/climate.git",
+                "reference": "b103fc8faa3780c802cc507d5f0ff534ecc94fb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/climate/zipball/b103fc8faa3780c802cc507d5f0ff534ecc94fb5",
+                "reference": "b103fc8faa3780c802cc507d5f0ff534ecc94fb5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "seld/cli-prompt": "~1.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.4",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\CLImate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Tannenbaum",
+                    "email": "hey@joe.codes",
+                    "homepage": "http://joe.codes/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP's best friend for the terminal. CLImate allows you to easily output colored text, special formats, and more.",
+            "keywords": [
+                "cli",
+                "colors",
+                "command",
+                "php",
+                "terminal"
+            ],
+            "time": "2016-04-04 20:24:59"
+        },
         {
             "name": "monolog/monolog",
             "version": "1.21.0",
@@ -84,6 +248,103 @@
                 "psr-3"
             ],
             "time": "2016-07-29 03:23:52"
+        },
+        {
+            "name": "nategood/commando",
+            "version": "0.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nategood/commando.git",
+                "reference": "f5833ee1daf83bbda7bf26ab2af478a9b14eecc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nategood/commando/zipball/f5833ee1daf83bbda7bf26ab2af478a9b14eecc3",
+                "reference": "f5833ee1daf83bbda7bf26ab2af478a9b14eecc3",
+                "shasum": ""
+            },
+            "require": {
+                "kevinlebrun/colors.php": "0.2.*",
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Commando": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nate Good",
+                    "email": "me@nategood.com"
+                }
+            ],
+            "description": "PHP CLI Commando Style",
+            "homepage": "http://github.com/nategood/commando",
+            "keywords": [
+                "automation",
+                "cli",
+                "command",
+                "command line",
+                "command line interface",
+                "scripting"
+            ],
+            "time": "2016-01-07 18:12:04"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
+                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2016-04-19 13:41:41"
         },
         {
             "name": "pimple/pimple",
@@ -170,6 +431,54 @@
             "time": "2012-12-21 11:40:51"
         },
         {
+            "name": "seld/cli-prompt",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/cli-prompt.git",
+                "reference": "8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4",
+                "reference": "8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Seld\\CliPrompt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Allows you to prompt for user input on the command line, and optionally hide the characters they type",
+            "keywords": [
+                "cli",
+                "console",
+                "hidden",
+                "input",
+                "prompt"
+            ],
+            "time": "2016-04-18 09:31:41"
+        },
+        {
             "name": "silex/silex",
             "version": "v2.0.2",
             "source": {
@@ -253,6 +562,138 @@
                 "microframework"
             ],
             "time": "2016-06-14 09:27:51"
+        },
+        {
+            "name": "slavkluev/hexlet-psr-linter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slavkluev/hexlet-psr-linter.git",
+                "reference": "a48292c96171abaf6e1642ab6e46297a4cb6f3d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slavkluev/hexlet-psr-linter/zipball/a48292c96171abaf6e1642ab6e46297a4cb6f3d4",
+                "reference": "a48292c96171abaf6e1642ab6e46297a4cb6f3d4",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "1.1.0",
+                "league/climate": "*",
+                "nategood/commando": "0.2.8",
+                "nikic/php-parser": "2.1.0",
+                "php": "^7.0",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "^5.2"
+            },
+            "bin": [
+                "bin/psrlint"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PSRLinter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Viacheslav Kliuev",
+                    "email": "slavkluev@yandex.ru"
+                }
+            ],
+            "description": "PHP linter library",
+            "homepage": "https://github.com/slavkluev/hexlet-psr-linter",
+            "keywords": [
+                "linter",
+                "php",
+                "psr"
+            ],
+            "time": "2016-08-09 09:39:42"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "2.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "4edb770cb853def6e60c93abb088ad5ac2010c83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/4edb770cb853def6e60c93abb088ad5ac2010c83",
+                "reference": "4edb770cb853def6e60c93abb088ad5ac2010c83",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.1.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "bin": [
+                "scripts/phpcs",
+                "scripts/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "CodeSniffer.php",
+                    "CodeSniffer/CLI.php",
+                    "CodeSniffer/Exception.php",
+                    "CodeSniffer/File.php",
+                    "CodeSniffer/Fixer.php",
+                    "CodeSniffer/Report.php",
+                    "CodeSniffer/Reporting.php",
+                    "CodeSniffer/Sniff.php",
+                    "CodeSniffer/Tokens.php",
+                    "CodeSniffer/Reports/",
+                    "CodeSniffer/Tokenizers/",
+                    "CodeSniffer/DocGenerators/",
+                    "CodeSniffer/Standards/AbstractPatternSniff.php",
+                    "CodeSniffer/Standards/AbstractScopeSniff.php",
+                    "CodeSniffer/Standards/AbstractVariableSniff.php",
+                    "CodeSniffer/Standards/IncorrectPatternException.php",
+                    "CodeSniffer/Standards/Generic/Sniffs/",
+                    "CodeSniffer/Standards/MySource/Sniffs/",
+                    "CodeSniffer/Standards/PEAR/Sniffs/",
+                    "CodeSniffer/Standards/PSR1/Sniffs/",
+                    "CodeSniffer/Standards/PSR2/Sniffs/",
+                    "CodeSniffer/Standards/Squiz/Sniffs/",
+                    "CodeSniffer/Standards/Zend/Sniffs/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "http://www.squizlabs.com/php-codesniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "time": "2016-07-13 23:29:13"
         },
         {
             "name": "symfony/debug",
@@ -831,7 +1272,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "slavkluev/hexlet-psr-linter": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
