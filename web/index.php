@@ -26,16 +26,27 @@ $app->get('/', function () use ($app) {
 $app->post('/', function (Request $request) use ($app) {
     $code = $request->get('code');
     $linter = new Linter();
-    $report = $linter->lint($code);
-    $errors = $report->getErrors();
-    $result = array_map(function (\PSRLinter\Report\Error $error) {
-        return [
-            "description" => $error->getDescription(),
-            "line" => $error->getLine(),
-            "title" => $error->getTitle(),
-            "level" => $error->getType()
+    try {
+        $report = $linter->lint($code);
+        $errors = $report->getErrors();
+        $result = array_map(function (\PSRLinter\Report\Error $error) {
+            return [
+                "description" => $error->getDescription(),
+                "line" => $error->getLine(),
+                "title" => $error->getTitle(),
+                "level" => $error->getType()
+            ];
+        }, $errors);
+    } catch (Exception $e) {
+        $result = [
+            [
+                "description" => $e->getMessage(),
+                "line" => $e->getLine(),
+                "title" => $e->getCode(),
+                "level" => "error"
+            ]
         ];
-    }, $errors);
+    }
     return $app['twig']->render('index.twig', array(
         "code" => $code,
         "result" => $result
