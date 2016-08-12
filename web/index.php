@@ -41,8 +41,8 @@ $app->post('/', function (Request $request) use ($app) {
         $result = [
             [
                 "description" => $e->getMessage(),
-                "line" => $e->getLine(),
-                "title" => $e->getCode(),
+                "line" => "",
+                "title" => "",
                 "level" => "error"
             ]
         ];
