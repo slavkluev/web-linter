@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Linter</title>
-    <link rel="stylesheet" href="{{ app.request.basepath }}/views/css/bootstrap.min.css">
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
 <div class="cover-container">
@@ -17,7 +16,7 @@
     <div class="center-row">
         <div class="col-sm-6">
             <form action="/" method="post">
-                <textarea class="form-control prettyprint" style="font-family:monospace;" name="code" required>{{ code|e }}</textarea>
+                <textarea class="form-control" style="font-family:monospace;" name="code" required>{{ code|e }}</textarea>
                 <input class="btn btn-primary btn-block" type="submit">
             </form>
         </div>
@@ -52,6 +51,6 @@
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
