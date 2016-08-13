@@ -569,12 +569,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/slavkluev/hexlet-psr-linter.git",
-                "reference": "a48292c96171abaf6e1642ab6e46297a4cb6f3d4"
+                "reference": "9b1b35fd489f55c4a940ef791d758838353753cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slavkluev/hexlet-psr-linter/zipball/a48292c96171abaf6e1642ab6e46297a4cb6f3d4",
-                "reference": "a48292c96171abaf6e1642ab6e46297a4cb6f3d4",
+                "url": "https://api.github.com/repos/slavkluev/hexlet-psr-linter/zipball/9b1b35fd489f55c4a940ef791d758838353753cb",
+                "reference": "9b1b35fd489f55c4a940ef791d758838353753cb",
                 "shasum": ""
             },
             "require": {
@@ -615,7 +615,7 @@
                 "php",
                 "psr"
             ],
-            "time": "2016-08-09 09:39:42"
+            "time": "2016-08-13 08:52:10"
         },
         {
             "name": "squizlabs/php_codesniffer",

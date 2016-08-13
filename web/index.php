@@ -25,7 +25,11 @@ $app->get('/', function () use ($app) {
 
 $app->post('/', function (Request $request) use ($app) {
     $code = $request->get('code');
-    $linter = new Linter();
+    $rules = [
+        PSRLinter\Rules\CamelCase::class,
+        PSRLinter\Rules\SideEffect::class
+    ];
+    $linter = new Linter($rules);
     try {
         $report = $linter->lint($code);
         $errors = $report->getErrors();
