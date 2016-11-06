@@ -1,4 +1,5 @@
 {
+  "name": "slavkluev/web-linter",
   "require" : {
     "silex/silex": "2.0.2",
     "monolog/monolog": "~1.7",
@@ -8,5 +9,11 @@
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
-  }
+  },
+  "authors": [
+    {
+      "name": "Viacheslav Kliuev",
+      "email": "slavkluev@yandex.ru"
+    }
+  ]
 }
